@@ -1,5 +1,5 @@
 /* Engine: audio, captions, lip-sync, guide, progress, sūtra cards, widgets, corpus browser.
-   Globals injected by build.py: SUT (curated sūtras), CORPUS (all sūtras), NARR, AUDIO (scene clips), SAUDIO (sūtra clips) */
+   Globals injected by build.py: SUT (curated sūtras), ROOTS (verified dhātus), CORPUS (all sūtras), NARR, AUDIO (scene clips), SAUDIO (sūtra clips) */
 (function(){
 'use strict';
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
@@ -58,19 +58,31 @@ function playSutra(id,el){
 }
 
 /* ---------- sūtra card ---------- */
+const ROOT_RE=/√([^\s,+():;“”.]+)/g;
+function buildHtml(txt){return esc(txt).replace(ROOT_RE,(m,t)=>`<button class="rootlink" data-root="${esc(t)}" aria-label="Root ${esc(t)}">√${esc(t.replace(/[²¹³]/g,''))}</button>`);}
+function rootCard(t){
+  const r=ROOTS[t]; if(!r)return '';
+  return `<div class="rcard"><b>√${esc(r.iast)}</b> <span class="dev">${esc(r.dev)}</span> · <i>${esc(r.en)}</i><br><span class="gnote">dhātupāṭha ${r.gana}.${r.num} (${esc(r.ganaName)} gaṇa): “${esc(r.entry)}”, meaning “${esc(r.sa)}”</span> <button class="btn small" data-rootidx="${esc(t)}">All words from this root</button></div>`;
+}
 function sutraCard(id,opts){
   opts=opts||{}; const u=SUT[id]; if(!u)return `<p class="gnote">Sūtra ${esc(id)} not curated.</p>`;
   const tag=u.tag?`<span class="badge tagb">${esc(u.tag)}</span>`:'';
   return `<article class="card sut" data-sid="${esc(id)}"><div class="chead"><span class="vid">NS ${esc(id)}</span>${tag}${opts.title?`<h3>${esc(opts.title)}</h3>`:'<h3></h3>'}</div>
   <div class="sline"><button class="play" data-splay="${esc(id)}" aria-label="Play sūtra ${esc(id)}">▶</button><div><div class="dev sdev">${esc(u.dev)}</div><div class="iast">${esc(u.iast)}</div></div></div>
   <div class="chips">${u.chips.map((c,j)=>`<button class="wchip" aria-pressed="false" data-sw="${esc(id)}:${j}"><span class="wt">${esc(c[0])}</span></button>`).join('')}</div>
-  <div class="wdetail" aria-live="polite">Tap any word to see what it means.</div>
-  <p class="meaning"><b>In plain words:</b> ${esc(u.tr)} <span class="gnote">(our paraphrase)</span></p></article>`;
+  <div class="wdetail" aria-live="polite">Tap any word to see its meaning, how it is built, and its root.</div>
+  <p class="meaning"><b>In plain words:</b> ${esc(u.tr)} <span class="gnote">(our paraphrase)</span></p>
+  <p class="exp"><b>How to read it:</b> ${esc(u.ex)}</p>
+  <details class="tbl"><summary>Word-by-word table: meaning, build, root</summary><table class="wt"><tr><th>Word</th><th>Meaning</th><th>Build and root</th></tr>${u.chips.map(c=>`<tr><td class="iast">${esc(c[0])}</td><td>${esc(c[1])}</td><td>${buildHtml(c[2])}</td></tr>`).join('')}</table></details></article>`;
 }
 document.addEventListener('click',e=>{
   const b=e.target.closest('button'); if(!b)return;
-  if(b.dataset.sw){const [id,j]=b.dataset.sw.split(':');const card=b.closest('.card');$$('.wchip',card).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');const c=SUT[id].chips[+j];$('.wdetail',card).innerHTML=`<span class="iast big">${esc(c[0])}</span> <b>=</b> ${esc(c[1])}`;}
+  if(b.dataset.sw){const [id,j]=b.dataset.sw.split(':');const card=b.closest('.card');$$('.wchip',card).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');const c=SUT[id].chips[+j];
+    $('.wdetail',card).innerHTML=`<span class="iast big">${esc(c[0])}</span> <b>=</b> ${esc(c[1])}`+(c[2]?`<div class="bld"><b>Build:</b> ${buildHtml(c[2])}</div>`:'')+(c[3]&&c[3].length?c[3].map(rootCard).join(''):'');}
   else if(b.dataset.splay){playSutra(b.dataset.splay,b.closest('.sline'));}
+  else if(b.dataset.root){openBrowser(null,b.dataset.root);}
+  else if(b.dataset.rootidx){openBrowser(null,b.dataset.rootidx);}
+  else if(b.dataset.gosid){openBrowser(b.dataset.gosid);}
 });
 
 /* ---------- reusable widgets ---------- */
@@ -113,6 +125,13 @@ function orderer(root,cfg){
       else{miss++;t.classList.add('shake');setTimeout(()=>t.classList.remove('shake'),400);msg.innerHTML='<span class="bad">Not yet.</span> '+(cfg.wrong||'Something else comes first.');react('Check the order.','think');}};pool.appendChild(t);});};
   draw();
 }
+function tabs(root,names,fns){
+  const bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');
+  const panels=names.map(()=>{const d=document.createElement('div');d.hidden=true;return d;});
+  names.forEach((n,i)=>{const b=document.createElement('button');b.setAttribute('role','tab');b.textContent=n;b.setAttribute('aria-selected','false');
+    b.onclick=()=>{$$('button',bar).forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');panels.forEach(p=>p.hidden=true);panels[i].hidden=false;if(!panels[i].dataset.ready){panels[i].dataset.ready=1;fns[i](panels[i]);}};bar.appendChild(b);});
+  root.appendChild(bar);panels.forEach(p=>root.appendChild(p));$$('button',bar)[0].click();
+}
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2600);}
 function setAccessory(){const lv=S.quizPassed?4:Math.min(S.level,4); const sh=$('#band'); if(sh)sh.setAttribute('fill',BAND[lv]);
   $('#rank').textContent=RANKS[lv]; $('#rankSub').textContent='Level: '+LEVELS[Math.min(S.level,4)]; }
@@ -138,16 +157,33 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight')go(S.idx+1); else if(e.key==='ArrowLeft')go(S.idx-1);
 });
 
-/* ---------- full-text browser (all sūtras of the edition) ---------- */
+/* ---------- full-text browser (all sūtras of the edition) + roots index ---------- */
 const AHN=[['1.1','Adhyāya 1, āhnika 1'],['1.2','Adhyāya 1, āhnika 2'],['2.1','Adhyāya 2, āhnika 1'],['2.2','Adhyāya 2, āhnika 2'],['3.1','Adhyāya 3, āhnika 1'],['3.2','Adhyāya 3, āhnika 2'],['4.1','Adhyāya 4, āhnika 1'],['4.2','Adhyāya 4, āhnika 2'],['5.1','Adhyāya 5, āhnika 1'],['5.2','Adhyāya 5, āhnika 2']];
-let sbA='1.1';
+let sbA='1.1', sbMode='s', sbRoot=null;
+const srt=(a,b)=>{const x=a.split('.').map(Number),y=b.split('.').map(Number);return x[0]-y[0]||x[1]-y[1]||x[2]-y[2];};
 function sbDraw(){
-  const q=($('#sbq').value||'').trim().toLowerCase(); const ids=Object.keys(CORPUS).filter(k=>k.startsWith(sbA+'.')||(q&&true)).sort((a,b)=>{const x=a.split('.').map(Number),y=b.split('.').map(Number);return x[0]-y[0]||x[1]-y[1]||x[2]-y[2];});
-  const rows=ids.filter(k=>!q||k.startsWith(q)||CORPUS[k][0].toLowerCase().includes(q)||CORPUS[k][1].includes(q)).slice(0,q?60:400);
-  $('#sbtabs').innerHTML=AHN.map(a=>`<button class="btn small" data-ah="${a[0]}" aria-pressed="${a[0]===sbA&&!q}" title="${a[1]}">${a[0]}</button>`).join('');
-  $('#sblist').innerHTML=rows.length?rows.map(k=>`<div class="sbrow"><span class="vid">${k}</span> ${SAUDIO['s_'+k.replace(/\./g,'_')]?`<button class="play mini-play" data-splay="${k}" aria-label="Play ${k}">▶</button>`:''}<div class="dev">${esc(CORPUS[k][1])}</div><div class="iast">${esc(CORPUS[k][0])}</div></div>`).join(''):'<p class="gnote">No sūtra matches.</p>';
+  const q=($('#sbq').value||'').trim().toLowerCase();
+  $('#sbmS').setAttribute('aria-pressed',sbMode==='s'); $('#sbmR').setAttribute('aria-pressed',sbMode==='r');
+  if(sbMode==='s'){
+    const ids=Object.keys(CORPUS).filter(k=>k.startsWith(sbA+'.')||q).sort(srt);
+    const rows=ids.filter(k=>!q||k.startsWith(q)||CORPUS[k][0].toLowerCase().includes(q)||CORPUS[k][1].includes(q)).slice(0,q?60:400);
+    $('#sbtabs').innerHTML=AHN.map(a=>`<button class="btn small" data-ah="${a[0]}" aria-pressed="${a[0]===sbA&&!q}" title="${a[1]}">${a[0]}</button>`).join('');
+    $('#sblist').innerHTML=rows.length?rows.map(k=>`<div class="sbrow"><span class="vid">${k}</span> ${SAUDIO['s_'+k.replace(/\./g,'_')]?`<button class="play mini-play" data-splay="${k}" aria-label="Play ${k}">▶</button>`:''}${SUT[k]?`<span class="badge tagb">decoded</span>`:''}<div class="dev">${esc(CORPUS[k][1])}</div><div class="iast">${esc(CORPUS[k][0])}</div>${SUT[k]?`<details class="tbl"><summary>Meaning and roots</summary>${sutraCard(k)}</details>`:''}</div>`).join(''):'<p class="gnote">No sūtra matches.</p>';
+  } else {
+    $('#sbtabs').innerHTML=`<p class="gnote" style="margin:0">Roots (dhātus) found in the ${Object.keys(SUT).length} decoded sūtras, each checked against the dhātupāṭha.</p>`;
+    const keys=Object.keys(ROOTS).filter(k=>!q||k.toLowerCase().includes(q)||ROOTS[k].en.includes(q)||ROOTS[k].dev.includes(q)||ROOTS[k].uses.some(u=>u[1].toLowerCase().includes(q))).sort((a,b)=>a.localeCompare(b,'sa'));
+    const first=sbRoot&&keys.includes(sbRoot)?[sbRoot,...keys.filter(k=>k!==sbRoot)]:keys;
+    $('#sblist').innerHTML=first.map(k=>{const r=ROOTS[k],ws=[...new Set(r.uses.map(u=>u[0]+'|'+u[1]))].map(x=>x.split('|'));
+      return `<div class="sbrow rootrow${k===sbRoot?' hl':''}" id="rt-${esc(k)}"><b>√${esc(r.iast)}</b> <span class="dev">${esc(r.dev)}</span> · <i>${esc(r.en)}</i><br><span class="gnote">dhātupāṭha ${r.gana}.${r.num} (${esc(r.ganaName)}): “${esc(r.entry)}”, “${esc(r.sa)}”</span><div class="chips">${ws.map(w=>`<button class="wchip" data-gosid="${esc(w[0])}"><span class="wt">${esc(w[1].split(' ')[0].split('|')[0])}</span> <small>${esc(w[0])}</small></button>`).join('')}</div></div>`;}).join('')||'<p class="gnote">No root matches.</p>';
+    if(sbRoot){const el=$('#rt-'+CSS.escape(sbRoot));el&&el.scrollIntoView({block:'start'});}
+  }
 }
-function openBrowser(id){ $('#sb').hidden=false; if(id&&CORPUS[id]){sbA=id.split('.').slice(0,2).join('.');$('#sbq').value='';} sbDraw(); $('#sbq').focus(); }
+function openBrowser(id,root){
+  $('#sb').hidden=false;
+  if(root){sbMode='r';sbRoot=root;$('#sbq').value='';}
+  else{sbMode='s';sbRoot=null;if(id&&CORPUS[id]){sbA=id.split('.').slice(0,2).join('.');$('#sbq').value='';}}
+  sbDraw(); if(!root)$('#sbq').focus();
+}
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.ah){sbA=b.dataset.ah;$('#sbq').value='';sbDraw();}});
 
 /* ---------- boot ---------- */
@@ -177,10 +213,11 @@ function boot(){
   $('#fx').onclick=e=>{const off=document.body.classList.toggle('fx-off');e.currentTarget.setAttribute('aria-pressed',off);};
   $('#theme').onclick=()=>{const d=document.documentElement;const dark=d.dataset.theme==='dark'||(d.dataset.theme!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches);d.dataset.theme=dark?'light':'dark';};
   $('#sutraBtn').onclick=()=>openBrowser(); $('#sbx').onclick=()=>{$('#sb').hidden=true;}; $('#sbq').oninput=sbDraw;
+  $('#sbmS').onclick=()=>{sbMode='s';sbRoot=null;sbDraw();}; $('#sbmR').onclick=()=>{sbMode='r';sbRoot=null;sbDraw();};
   const enter=snd=>{S.sound=snd;$('#intro').style.display='none';if(snd){try{ctx||wire(au);}catch(e){}}document.body.classList.toggle('silent',!snd);if(!snd){$('#mute').disabled=true;}setAccessory();render();};
   $('#enterSound').onclick=()=>enter(true); $('#enterSilent').onclick=()=>enter(false);
   blink(); mouthLoop();
 }
 window.addEventListener('DOMContentLoaded',boot);
-const EX=window.EX={$,$$,esc,react,setMood,toast,quiz,sorter,orderer,shuffle,sutraCard,playSutra,openBrowser,go,S,SCENES,SUT,CORPUS,quizPassed:()=>{S.quizPassed=true;setAccessory();}};
+const EX=window.EX={$,$$,esc,tabs,ROOTS,rootCard,react,setMood,toast,quiz,sorter,orderer,shuffle,sutraCard,playSutra,openBrowser,go,S,SCENES,SUT,CORPUS,quizPassed:()=>{S.quizPassed=true;setAccessory();}};
 })();

@@ -1,13 +1,7 @@
-/* Scenes 12-17: Vādin and Naiyāyika levels */
+/* Scenes 14-17: Vādin and Naiyāyika levels */
 (function(){
 const SC=window.SCENES, E=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-function tabs(root,X,names,fns){
-  const bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');
-  const panels=names.map(()=>{const d=document.createElement('div');d.hidden=true;return d;});
-  names.forEach((n,i)=>{const b=document.createElement('button');b.setAttribute('role','tab');b.textContent=n;b.setAttribute('aria-selected','false');
-    b.onclick=()=>{X.$$('button',bar).forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');panels.forEach(p=>p.hidden=true);panels[i].hidden=false;if(!panels[i].dataset.ready){panels[i].dataset.ready=1;fns[i](panels[i]);}};bar.appendChild(b);});
-  root.appendChild(bar);panels.forEach(p=>root.appendChild(p));X.$$('button',bar)[0].click();
-}
+const tabs=(root,X,names,fns)=>X.tabs(root,names,fns);
 
 /* ---------- 12. Chala ---------- */
 SC.push({id:'s12',level:3,mood:'alert',title:'Sabhā II: chala, the quibble',
@@ -68,7 +62,7 @@ init(root,X){
 
 /* ---------- 15. Jāti and nigrahasthāna ---------- */
 const JATI=['sādharmya-sama','vaidharmya-sama','utkarṣa-sama','apakarṣa-sama','varṇya-sama','avarṇya-sama','vikalpa-sama','sādhya-sama','prāpti-sama','aprāpti-sama','prasaṅga-sama','pratidṛṣṭānta-sama','anutpatti-sama','saṃśaya-sama','prakaraṇa-sama','ahetu-sama','arthāpatti-sama','aviśeṣa-sama','upapatti-sama','upalabdhi-sama','anupalabdhi-sama','nitya-sama','anitya-sama','kārya-sama'];
-const NIG=[['pratijñāhāni','abandoning one’s own thesis'],['pratijñāntara','shifting to another thesis'],['pratijñāvirodha','thesis contradicts the reason'],['pratijñāsannyāsa','disowning the thesis'],['hetvantara','bringing in a different reason'],['arthāntara','wandering to an irrelevant matter'],['nirarthaka','meaningless sounds'],['avijñātārtha','unintelligible even to the audience'],['apārthaka','incoherent sequence of words'],['aprāptakāla','members stated in the wrong order'],['nyūna','lacking a member'],['adhika','having an extra member'],['punarukta','repetition'],['ananubhāṣaṇa','failing to restate the opponent’s words'],['ajñāna','not understanding the opponent'],['apratibhā','having no reply'],['vikṣepa','breaking off on a pretext'],['matānujñā','admitting the opponent’s point as one’s own'],['paryanuyojyopekṣaṇa','failing to notice a fault in oneself'],['niranuyojyānuyoga','faulting the faultless'],['apasiddhānta','contradicting one’s own tenet'],['hetvābhāsa','a faulty reason (scene 11)']];
+const NIG=[['pratijñāhāni','abandoning one’s own thesis'],['pratijñāntara','shifting to another thesis'],['pratijñāvirodha','thesis contradicts the reason'],['pratijñāsannyāsa','disowning the thesis'],['hetvantara','bringing in a different reason'],['arthāntara','wandering to an irrelevant matter'],['nirarthaka','meaningless sounds'],['avijñātārtha','unintelligible even to the audience'],['apārthaka','incoherent sequence of words'],['aprāptakāla','members stated in the wrong order'],['nyūna','lacking a member'],['adhika','having an extra member'],['punarukta','repetition'],['ananubhāṣaṇa','failing to restate the opponent’s words'],['ajñāna','not understanding the opponent'],['apratibhā','having no reply'],['vikṣepa','breaking off on a pretext'],['matānujñā','admitting the opponent’s point as one’s own'],['paryanuyojyopekṣaṇa','failing to notice a fault in oneself'],['niranuyojyānuyoga','faulting the faultless'],['apasiddhānta','contradicting one’s own tenet'],['hetvābhāsa','a faulty reason (scene 13)']];
 SC.push({id:'s15',level:4,mood:'alert',title:'Sabhā III: jāti and nigrahasthāna',
 html:`<p class="lead">Adhyāya 5: 5.1.1 lists the jātis, 5.2.1 the grounds of defeat. Names come from the sūtras; one-line glosses are paraphrased from the tradition.</p>
 <div class="sec">24 jātis (5.1.1)</div><div class="chipwall" id="n15-j"></div>
@@ -104,7 +98,7 @@ init(root,X){
    p=>{ p.innerHTML=`<div class="row2"><button class="btn small" id="n16-a" aria-pressed="false">Show the Aristotelian rewrite</button></div>
      <table class="wt arg"><tr><th>Nyāya (five members)</th><th id="n16-h2">Aristotelian syllogism</th></tr>
      <tr><td>1. Thesis: the hill has fire</td><td class="ar">(announced in the conclusion)</td></tr><tr><td>2. Reason: because of smoke</td><td class="ar">(the middle term)</td></tr><tr><td>3. Example: whatever has smoke has fire, as in the kitchen</td><td class="ar">Major premise: All smoky things are fiery. (no instance is cited)</td></tr><tr><td>4. Application: this hill is so</td><td class="ar">Minor premise: This hill is smoky.</td></tr><tr><td>5. Conclusion: therefore it has fire</td><td class="ar">Conclusion: So this hill is fiery.</td></tr></table>
-     <ul class="cmpl"><li>Nyāya states the thesis first and cites a witnessing instance (dṛṣṭānta) inside the argument.</li><li>The reason is judged by where it sits relative to target and non-target: Dignāga’s three marks (scene 9).</li><li>Nyāya studies fallacies as defects of the reason (scene 11), where Aristotle’s fallacies are mostly of form and language.</li></ul><p class="gnote">This is a classroom comparison, not an equivalence: scholars stress that the systems differ in structure.</p>`;
+     <ul class="cmpl"><li>Nyāya states the thesis first and cites a witnessing instance (dṛṣṭānta) inside the argument.</li><li>The reason is judged by where it sits relative to target and non-target: Dignāga’s three marks (scene 11).</li><li>Nyāya studies fallacies as defects of the reason (scene 13), where Aristotle’s fallacies are mostly of form and language.</li></ul><p class="gnote">This is a classroom comparison, not an equivalence: scholars stress that the systems differ in structure.</p>`;
      const ar=X.$$('.ar',p); ar.forEach(c=>c.style.visibility='hidden'); X.$('#n16-a',p).onclick=e=>{const on=e.currentTarget.getAttribute('aria-pressed')!=='true';e.currentTarget.setAttribute('aria-pressed',on);ar.forEach(c=>c.style.visibility=on?'visible':'hidden');e.currentTarget.textContent=on?'Hide the Aristotelian rewrite':'Show the Aristotelian rewrite';}; },
    p=>{ p.innerHTML=`<p>Navya-Nyāya gives absence (abhāva) careful structure: every absence has a <b>pratiyogin</b> (the thing that is absent) and an <b>anuyogin</b> (the locus where it is absent). Build one, then sort four kinds of absence.</p>
      <div class="row2"><label>Absent (pratiyogin) <select id="n16-x"><option>a pot</option><option>fire</option><option>a cloth</option></select></label><label>Locus (anuyogin) <select id="n16-y"><option>the floor</option><option>the lake</option><option>the room</option></select></label></div><div class="cdet" id="n16-ab" aria-live="polite"></div><div id="n16-so"></div>
@@ -142,7 +136,7 @@ html:`<p class="lead">Build your own inference, then take the quiz. Pass with 8 
 init(root,X){
   tabs(X.$('#n17-tabs',root),X,['Workbench','Final quiz','Cheat sheet'],[
    p=>{ const props=['smoke','fire','hot','water'];
-     p.innerHTML=`<p>Choose a locus (pakṣa), a reason (hetu) and a target (sādhya). The workbench checks the reason against a small world (scene 9). It is a toy: it knows the world’s facts exactly.</p><div class="row2"><label>Locus <select id="n17-k"></select></label><label>Reason <select id="n17-h"></select></label><label>Target <select id="n17-p"></select></label></div><div class="cdet" id="n17-v" aria-live="polite"></div><table class="wt arg" id="n17-t"></table>`;
+     p.innerHTML=`<p>Choose a locus (pakṣa), a reason (hetu) and a target (sādhya). The workbench checks the reason against a small world (scene 11). It is a toy: it knows the world’s facts exactly.</p><div class="row2"><label>Locus <select id="n17-k"></select></label><label>Reason <select id="n17-h"></select></label><label>Target <select id="n17-p"></select></label></div><div class="cdet" id="n17-v" aria-live="polite"></div><table class="wt arg" id="n17-t"></table>`;
      const k=X.$('#n17-k',p),h=X.$('#n17-h',p),t=X.$('#n17-p',p); WORLD.forEach((w,i)=>k.add(new Option(w[0],i))); props.forEach(q=>{h.add(new Option(q,q));t.add(new Option(q,q));}); h.value='smoke';t.value='fire';k.value=1;
      const run=()=>{const loc=WORLD[+k.value], H=h.value,P=t.value; const hp=WORLD.filter(w=>w[1][H]&&w[1][P]), hn=WORLD.filter(w=>w[1][H]&&!w[1][P]), nn=WORLD.filter(w=>!w[1][H]&&!w[1][P]); let verdict,cls='bad',name='';
        if(H===P){verdict='Choose two different properties.';name='';}

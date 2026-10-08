@@ -1,4 +1,4 @@
-/* Scenes 7-11: Tārkika and Vādin levels (the Logic lab and the first Sabhā scenes) */
+/* Scenes 9-11: Tārkika and Vādin levels (the Logic lab and the first Sabhā scenes) */
 (function(){
 const SC=window.SCENES, E=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
@@ -82,7 +82,7 @@ init(root,X){
 /* ---------- 10. Three kinds of discussion ---------- */
 SC.push({id:'s10',level:3,mood:'neutral',title:'Sabhā I: vāda, jalpa, vitaṇḍā',
 html:`<p class="lead">Sūtras 1.2.1 to 1.2.3 define three kinds of debate. Which one is each move?</p><div id="n10-sort"></div>
-<table class="wt cmp"><tr><th></th><th>vāda</th><th>jalpa</th><th>vitaṇḍā</th></tr><tr><td>States its own thesis</td><td>yes</td><td>yes</td><td>no</td></tr><tr><td>Proof and tarka, five members, within the tenet</td><td>yes</td><td>yes</td><td>attack only</td></tr><tr><td>Chala, jāti, nigrahasthāna as tools</td><td>not among its tools</td><td>yes</td><td>yes</td></tr></table><p class="gnote">Read from 1.2.1 to 1.2.3. Later authors add what each is for; the tradition says jalpa and vitaṇḍā guard the truth (4.2.50, scene 14).</p><div id="n10-cards"></div>`,
+<table class="wt cmp"><tr><th></th><th>vāda</th><th>jalpa</th><th>vitaṇḍā</th></tr><tr><td>States its own thesis</td><td>yes</td><td>yes</td><td>no</td></tr><tr><td>Proof and tarka, five members, within the tenet</td><td>yes</td><td>yes</td><td>attack only</td></tr><tr><td>Chala, jāti, nigrahasthāna as tools</td><td>not among its tools</td><td>yes</td><td>yes</td></tr></table><p class="gnote">Read from 1.2.1 to 1.2.3. Later authors add what each is for; the tradition says jalpa and vitaṇḍā guard the truth (4.2.50, scene 16).</p><div id="n10-cards"></div>`,
 init(root,X){
   const it=(l,b,why)=>({label:l,b,why});
   X.sorter(X.$('#n10-sort',root),{buckets:[{id:'v',label:'vāda',sub:'discussion'},{id:'j',label:'jalpa',sub:'wrangling'},{id:'t',label:'vitaṇḍā',sub:'cavilling'}],

@@ -57,12 +57,65 @@ html:`<p class="lead">Sūtra 1.1.1 is one compound word naming sixteen topics. S
 init(root,X){
   const it=(l,s,b,why)=>({label:l,sub:s,b,why});
   X.sorter(X.$('#n3-sort',root),{buckets:[{id:'a',label:'Knowing',sub:'the means and the object'},{id:'b',label:'Opening an inquiry',sub:'what starts and frames it'},{id:'c',label:'Building and settling',sub:'argument and its test'},{id:'d',label:'The debate arena',sub:'kinds of debate, faults, tricks'}],
-   items:[it('pramāṇa','means of knowing','a','Scene 4.'),it('prameya','object of knowing','a','Scene 6.'),it('saṃśaya','doubt','b','Scene 7.'),it('prayojana','purpose','b','Scene 7.'),it('dṛṣṭānta','example','b','Scene 7 and 8.'),it('siddhānta','established tenet','b','Scene 7.'),
-    it('avayava','members of an argument','c','Scene 8.'),it('tarka','hypothetical reasoning','c','Scene 7.'),it('nirṇaya','ascertainment','c','Scene 7.'),
-    it('vāda','discussion','d','Scene 10.'),it('jalpa','wrangling','d','Scene 10.'),it('vitaṇḍā','cavilling','d','Scene 10.'),it('hetvābhāsa','faulty reasons','d','Scene 11.'),it('chala','quibble','d','Scene 12.'),it('jāti','futile rejoinder','d','Scene 15.'),it('nigrahasthāna','ground of defeat','d','Scene 15.')],
+   items:[it('pramāṇa','means of knowing','a','Scene 6.'),it('prameya','object of knowing','a','Scene 8.'),it('saṃśaya','doubt','b','Scene 9.'),it('prayojana','purpose','b','Scene 9.'),it('dṛṣṭānta','example','b','Scene 9 and 10.'),it('siddhānta','established tenet','b','Scene 9.'),
+    it('avayava','members of an argument','c','Scene 10.'),it('tarka','hypothetical reasoning','c','Scene 9.'),it('nirṇaya','ascertainment','c','Scene 9.'),
+    it('vāda','discussion','d','Scene 12.'),it('jalpa','wrangling','d','Scene 12.'),it('vitaṇḍā','cavilling','d','Scene 12.'),it('hetvābhāsa','faulty reasons','d','Scene 13.'),it('chala','quibble','d','Scene 14.'),it('jāti','futile rejoinder','d','Scene 17.'),it('nigrahasthāna','ground of defeat','d','Scene 17.')],
    hint:'Tap a topic, then tap the family it belongs to. Each reply tells you which scene covers it.',right:'That is where it belongs.',
    onDone:()=>X.react('All sixteen placed. Now we study them in order.','happy')});
   X.$('#n3-card',root).innerHTML=X.sutraCard('1.1.1',{title:'The compound, word by word'});
+}});
+
+/* ---------- 3a. Method: name, define, examine (and no pratyāhāras) ---------- */
+SC.push({id:'m1',level:0,mood:'neutral',title:'How the text is built: name, define, examine',
+html:`<p class="lead">If you know Pāṇini, you know a text that compresses rules with codes: pratyāhāras such as “ac” and “hal” built from the Śiva-sūtras, and marker letters (anubandhas). The Nyāya-sūtra has <b>none of that</b>. It is written in plain, compact Sanskrit: long compound words and a few naming habits. What it has instead is a <b>method</b>.</p>
+<div class="cdet"><h4>Three moves (uddeśa, lakṣaṇa, parīkṣā)</h4><p><b>Uddeśa</b>, naming: list the topic. <b>Lakṣaṇa</b>, defining: say what marks it. <b>Parīkṣā</b>, examining: test the definition against objections. Vātsyāyana’s commentary describes the whole śāstra this way. Adhyāya 1 mostly names and defines; adhyāyas 2 to 5 mostly examine.</p></div>
+<div class="sec">Which move is each sūtra?</div><div id="m1-sort"></div>
+<div class="sec">Reading tip: the defined word comes last</div>
+<p>In a definition sūtra, everything before the last word describes it. In 1.1.4 the last word is <i>pratyakṣam</i>, “perception”. Try three.</p><div id="m1-quiz"></div><div id="m1-card"></div>`,
+init(root,X){
+  const it=(l,sub,b,why)=>({label:l,sub,b,why});
+  X.sorter(X.$('#m1-sort',root),{buckets:[{id:'u',label:'uddeśa',sub:'naming'},{id:'l',label:'lakṣaṇa',sub:'defining'},{id:'p',label:'parīkṣā',sub:'examining'}],
+   items:[it('1.1.3 pratyakṣānumānopamānaśabdāḥ pramāṇāni','names the four pramāṇas','u','It lists; the next sūtras define each.'),
+          it('1.1.9 ātmaśarīra…apavargāḥ tu prameyam','names the twelve prameyas','u','A list again.'),
+          it('1.1.4 indriyārtha… pratyakṣam','defines perception','l','It says what marks perception.'),
+          it('1.1.7 āptopadeśaḥ śabdaḥ','defines testimony','l','Definition, with the defined word last.'),
+          it('2.1.8 pratyakṣādīnām aprāmāṇyaṃ traikālyāsiddheḥ','objects to the pramāṇas','p','A test of the definitions.'),
+          it('3.1.1 darśanasparśanābhyām ekārthagrahaṇāt','argues for the self','p','Examining the first prameya.')],
+   hint:'Tap a sūtra, then its move.',onDone:()=>X.react('Name, define, examine.','happy')});
+  X.quiz(X.$('#m1-quiz',root),[
+   {q:'In 1.1.33, “sādhyanirdeśaḥ pratijñā”, which word is being defined?',o:['sādhya','nirdeśaḥ','pratijñā'],a:2,e:'The defined term comes last: pratijñā, the thesis.'},
+   {q:'In 1.1.40, “avijñātatattve arthe … ūhaḥ tarkaḥ”, which word is defined?',o:['ūhaḥ','arthe','tarkaḥ'],a:2,e:'Tarka is the defined term, last in the sūtra.'},
+   {q:'In 1.2.8, “sādhyāviśiṣṭaḥ sādhyatvāt sādhyasamaḥ”, which word is defined?',o:['sādhyatvāt','sādhyasamaḥ','sādhyāviśiṣṭaḥ'],a:1,e:'Sādhyasama, last: “a reason no different from the sādhya”.'}],
+   (sc,n)=>X.react(sc===n?'You read definitions the way the text writes them.':'Look to the last word.',sc===n?'happy':'think'));
+  X.$('#m1-card',root).innerHTML=X.sutraCard('1.1.4',{title:'A definition sūtra'});
+}});
+
+/* ---------- 3b. Reading the words: compounds, suffixes, roots, -sama ---------- */
+const CMP=[
+ ['indriyārthasannikarṣotpannam','tatpuruṣa: “born of the contact of sense and object”',[['indriya','sense'],['artha','object'],['sannikarṣa','contact'],['utpannam','born of']]],
+ ['pratyakṣānumānopamānaśabdāḥ','dvandva: an “and” list of four',[['pratyakṣa','perception'],['anumāna','inference'],['upamāna','analogy'],['śabdāḥ','testimony']]],
+ ['duḥkhajanmapravṛttidoṣamithyājñānānām','dvandva: an “and” list of five links',[['duḥkha','pain'],['janma','birth'],['pravṛtti','activity'],['doṣa','fault'],['mithyājñānānām','of false cognition']]],
+ ['tattvajñānārtham','tatpuruṣa chain: “for the sake of knowledge of the truth”',[['tattva','truth'],['jñāna','knowledge'],['artham','for the sake of']]],
+ ['pakṣapratipakṣābhyām','dvandva: “thesis and counter-thesis”',[['pakṣa','thesis'],['pratipakṣa','counter-thesis'],['ābhyām','by (dual)']]]];
+const SAMA={'sādharmya':'similarity','vaidharmya':'dissimilarity','utkarṣa':'raising (adding a property)','apakarṣa':'lowering (removing a property)','varṇya':'what is to be described (the subject)','avarṇya':'what is not to be described (the example)','vikalpa':'alternative','sādhya':'what is to be proved','prāpti':'reaching','aprāpti':'not reaching','prasaṅga':'an undesired consequence','pratidṛṣṭānta':'a counter-example','anutpatti':'non-production','saṃśaya':'doubt','prakaraṇa':'the question under discussion','hetu':'reason','arthāpatti':'implication','aviśeṣa':'non-distinction','upapatti':'tenability','upalabdhi':'perception','anupalabdhi':'non-perception','nitya':'eternal','anitya':'non-eternal','kārya':'product, effect'};
+SC.push({id:'m2',level:0,mood:'think',title:'Reading the words: compounds, suffixes and roots',
+html:`<p class="lead">A Nyāya sūtra is built from compounds, from verbal roots (<b>dhātus</b>) and from suffixes. Every sūtra card in this guide shows each word’s meaning and its build, with the root marked <span class="rootlink" style="pointer-events:none">√</span>; tap one to open its dhātupāṭha entry.</p><div id="m2-tabs"></div>`,
+init(root,X){
+  X.tabs(X.$('#m2-tabs',root),['Compounds','Suffixes','Roots (dhātus)','The “-sama” names'],[
+   p=>{ p.innerHTML=`<p>Sūtras string words together without spaces. Pick a compound and put its parts in order.</p><label>Compound <select id="m2-c">${CMP.map((c,i)=>`<option value="${i}">${c[0]}</option>`).join('')}</select></label><p class="gnote" id="m2-k"></p><div id="m2-o"></div><p class="gnote">Dvandva = “A and B and C”. Tatpuruṣa = “X of / for / from Y”.</p>`;
+     const draw=()=>{const c=CMP[+X.$('#m2-c',p).value];X.$('#m2-k',p).textContent='Type: '+c[1];X.orderer(X.$('#m2-o',p),{slotLabel:c[0],items:c[2].map(x=>({label:x[0],sub:x[1]})),seed:+X.$('#m2-c',p).value+3,hint:'Tap the parts in the order they appear.',wrong:'Which part comes first in the word?',done:'That is the compound, part by part.',onDone:()=>X.react('Compound opened.','happy')});};
+     X.$('#m2-c',p).onchange=draw;draw(); },
+   p=>{ p.innerHTML=`<p>Two families of suffix do most of the work. <b>Kṛt</b> suffixes make nouns from roots (-ana, -ti, -ta). <b>Taddhita</b> suffixes are added to nouns (-vat, -tva, -ika). The negative prefix is <i>a-</i> or <i>an-</i>. Sort these words by the suffix doing the work.</p><div id="m2-s"></div>`;
+     const it=(l,sub,b,why)=>({label:l,sub,b,why});
+     X.sorter(X.$('#m2-s',p),{buckets:[{id:'vat',label:'-vat',sub:'“like / having”'},{id:'tva',label:'-tva',sub:'“-ness”'},{id:'ana',label:'-ana',sub:'act, means (lyuṭ)'},{id:'ti',label:'-ti',sub:'act, state (ktin)'},{id:'ta',label:'-ta',sub:'“done” (kta)'},{id:'neg',label:'a- / an-',sub:'“not”'}],
+      items:[it('pūrvavat','like the earlier','vat','pūrva + vat.'),it('śeṣavat','with the remainder','vat','śeṣa + vat.'),it('sādhyatvāt','because it is sādhya','tva','sādhya + tva + abl.'),it('tattva','that-ness','tva','tad + tva.'),
+             it('pramāṇa','means of measuring','ana','pra + √mā + ana.'),it('sādhana','means of accomplishing','ana','√sādh + ana.'),it('darśana','seeing','ana','√dṛś + ana.'),it('anumāna','measuring after','ana','Careful: the “an” is anu (“after”); the suffix is the -ana at the end.'),
+             it('pravṛtti','activity','ti','pra + √vṛt + ti.'),it('upalabdhi','perceiving','ti','upa + √labh + ti.'),it('siddha','accomplished','ta','√sidh + ta.'),it('ukta','said','ta','√vac + ta.'),
+             it('avyabhicāri','not erring','neg','a + vyabhicāri.'),it('apratipatti','non-understanding','neg','a + pratipatti.')],hint:'Tap a word, then its suffix family.',onDone:()=>X.react('Suffixes spotted.','happy')}); },
+   p=>{ p.innerHTML=`<p>A <b>dhātu</b> is a verbal root, listed with a class (gaṇa) and a meaning in the <b>dhātupāṭha</b>. Roots in this text come from ${Object.keys(X.ROOTS).length} entries, each checked against that list. Tap a root.</p><div class="pgrid" id="m2-r"></div><div id="m2-rd"></div>`;
+     Object.keys(X.ROOTS).sort((a,b)=>a.localeCompare(b,'sa')).forEach(k=>{const r=X.ROOTS[k],b=document.createElement('button');b.className='ptile';b.innerHTML=`<b>√${X.esc(r.iast)}</b><small>${X.esc(r.en)}</small>`;b.onclick=()=>{X.$$('.ptile',p).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');X.$('#m2-rd',p).innerHTML=X.rootCard(k);};X.$('#m2-r',p).appendChild(b);}); },
+   p=>{ p.innerHTML=`<p>The reasons that fail and the rejoinders in adhyāya 5 share a naming code: <b>X-sama</b>, “equal to X”. The name tells you what the move leans on. Pick one.</p><label>Name <select id="m2-n"><option value="prakaraṇa">prakaraṇa-sama</option><option value="sādhya">sādhya-sama</option>${Object.keys(SAMA).filter(k=>k!=='prakaraṇa'&&k!=='sādhya').map(k=>`<option value="${k}">${k}-sama</option>`).join('')}</select></label><div class="cdet" id="m2-nd" aria-live="polite"></div><p class="gnote">The sūtras themselves only list the names (1.2.4 and 5.1.1) and then define them one by one. The glosses of the first part are the plain meanings of the words.</p>`;
+     const d=()=>{const k=X.$('#m2-n',p).value;X.$('#m2-nd',p).innerHTML=`<p><b>${k}-sama</b> = <b>${k}</b> (${X.esc(SAMA[k])}) + <b>sama</b> (“equal, on a par”).</p><p>A move named after what it leans on: ${X.esc(SAMA[k])}.</p>`;};X.$('#m2-n',p).onchange=d;d(); }]);
 }});
 
 /* ---------- 4. The four pramāṇas ---------- */

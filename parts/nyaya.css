@@ -76,3 +76,13 @@ select{font:inherit;padding:.3em .5em;border:2px solid var(--ink);border-radius:
 @media(max-width:600px){.amap{grid-template-columns:repeat(2,1fr)}}
 .sdev,.iast,.sbrow .dev,.sbrow .iast,.sutra-q{overflow-wrap:anywhere;word-break:break-word}
 .card,.cdet,.scene{min-width:0}
+
+.exp{margin:.5em 0;font-size:.96rem}
+.bld{margin:.5em 0;font-size:.92rem}
+.rootlink{border:1.5px solid var(--saffron);background:var(--card);color:var(--saffron);border-radius:8px;padding:0 7px;font-weight:700;font-family:var(--serif);font-size:.95em;cursor:pointer;min-height:24px}
+.rootlink:hover{background:var(--saffron);color:#fff7e0}
+.rcard{border:1.5px solid var(--line);border-left:5px solid var(--saffron);border-radius:8px;background:var(--card);padding:6px 10px;margin:8px 0;font-size:.92rem}
+.rcard .dev{font-size:1.1rem}
+.rootrow.hl{background:rgba(181,72,30,.1);border-radius:8px;padding-left:6px}
+.sb-head .btn[aria-pressed="true"]{background:var(--gold);color:#fff}
+.wchip small{color:var(--ink2);font-size:.72rem;margin-left:3px}
