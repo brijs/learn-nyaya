@@ -1,0 +1,1250 @@
+{
+ "1.1.1": {
+  "iast": "pramāṇaprameyasaṃśayaprayojanadṛṣṭāntasiddhāntāvayavatarkanirṇayavādajalpavitaṇḍāhetvābhāsacchalajātinigrahasthānānāṃ tattvajñānāt niḥśreyasādhigamaḥ",
+  "chips": [
+   [
+    "pramāṇa",
+    "means of valid knowledge"
+   ],
+   [
+    "prameya",
+    "object of knowledge"
+   ],
+   [
+    "saṃśaya",
+    "doubt"
+   ],
+   [
+    "prayojana",
+    "purpose"
+   ],
+   [
+    "dṛṣṭānta",
+    "example"
+   ],
+   [
+    "siddhānta",
+    "established tenet"
+   ],
+   [
+    "avayava",
+    "member of an argument"
+   ],
+   [
+    "tarka",
+    "hypothetical reasoning"
+   ],
+   [
+    "nirṇaya",
+    "ascertainment"
+   ],
+   [
+    "vāda",
+    "discussion"
+   ],
+   [
+    "jalpa",
+    "wrangling"
+   ],
+   [
+    "vitaṇḍā",
+    "cavilling"
+   ],
+   [
+    "hetvābhāsa",
+    "fallacious reason"
+   ],
+   [
+    "chala",
+    "quibble"
+   ],
+   [
+    "jāti",
+    "futile rejoinder"
+   ],
+   [
+    "nigrahasthāna",
+    "ground of defeat"
+   ],
+   [
+    "tattvajñānāt",
+    "from true knowledge of these"
+   ],
+   [
+    "niḥśreyasādhigamaḥ",
+    "attainment of the highest good"
+   ]
+  ],
+  "tr": "From true knowledge of these sixteen topics comes the attainment of the highest good.",
+  "tag": "",
+  "dev": "प्रमाणप्रमेयसंशयप्रयोजनदृष्टान्तसिद्धान्तावयवतर्कनिर्णयवादजल्पवितण्डाहेत्वाभासच्छलजातिनिग्रहस्थानानां तत्त्वज्ञानात् निःश्रेयसाधिगमः",
+  "corpus": "pramāṇa-prameya-saṃśaya-prayojana-dṛṣṭānta-siddhāntāvayava-tarka-nirṇaya-vāda-jalpa-vitaṇḍāhetvābhāsa-cchala-jāti-nigrahasthānānāmtattvajñānāt niḥśreyasādhigamaḥ"
+ },
+ "1.1.2": {
+  "iast": "duḥkhajanmapravṛttidoṣamithyājñānānām uttarottarāpāye tadanantarāpāyāt apavargaḥ",
+  "chips": [
+   [
+    "duḥkha",
+    "pain"
+   ],
+   [
+    "janma",
+    "birth"
+   ],
+   [
+    "pravṛtti",
+    "activity"
+   ],
+   [
+    "doṣa",
+    "fault"
+   ],
+   [
+    "mithyājñānānām",
+    "of false cognitions (the five, in this order)"
+   ],
+   [
+    "uttarottara-apāye",
+    "when each later member goes"
+   ],
+   [
+    "tad-anantara-apāyāt",
+    "the one just before it goes too"
+   ],
+   [
+    "apavargaḥ",
+    "release"
+   ]
+  ],
+  "tr": "Of pain, birth, activity, fault and false cognition: as each later one departs, the one before it departs, and so there is release.",
+  "tag": "",
+  "dev": "दुःखजन्मप्रवृत्तिदोषमिथ्याज्ञानानाम् उत्तरोत्तरापाये तदनन्तरापायात् अपवर्गः",
+  "corpus": "duḥkhajanmapravṛttidoṣamithyājñānānām uttarottarāpāye tadanantarā pāyāt apavargaḥ"
+ },
+ "1.1.3": {
+  "iast": "pratyakṣānumānopamānaśabdāḥ pramāṇāni",
+  "chips": [
+   [
+    "pratyakṣa",
+    "perception"
+   ],
+   [
+    "anumāna",
+    "inference"
+   ],
+   [
+    "upamāna",
+    "analogy"
+   ],
+   [
+    "śabdāḥ",
+    "verbal testimony"
+   ],
+   [
+    "pramāṇāni",
+    "are the means of valid knowledge"
+   ]
+  ],
+  "tr": "Perception, inference, analogy and testimony are the means of valid knowledge.",
+  "tag": "",
+  "dev": "प्रत्यक्षानुमानोपमानशब्दाः प्रमाणानि",
+  "corpus": "pratyakṣānumānopamānaśabdāḥ pramāṇāni"
+ },
+ "1.1.4": {
+  "iast": "indriyārthasannikarṣotpannaṃ jñānam avyapadeśyam avyabhicāri vyavasāyātmakaṃ pratyakṣam",
+  "chips": [
+   [
+    "indriya",
+    "sense organ"
+   ],
+   [
+    "artha",
+    "object"
+   ],
+   [
+    "sannikarṣotpannam",
+    "born of the contact"
+   ],
+   [
+    "jñānam",
+    "cognition"
+   ],
+   [
+    "avyapadeśyam",
+    "not verbally designated"
+   ],
+   [
+    "avyabhicāri",
+    "not erring"
+   ],
+   [
+    "vyavasāyātmakam",
+    "determinate in nature"
+   ],
+   [
+    "pratyakṣam",
+    "is perception"
+   ]
+  ],
+  "tr": "Perception is cognition born of contact between a sense and its object, not tied to a word, non-erring, and determinate.",
+  "tag": "",
+  "dev": "इन्द्रियार्थसन्निकर्षोत्पन्नं ज्ञानम् अव्यपदेश्यम् अव्यभिचारि व्यवसायात्मकं प्रत्यक्षम्",
+  "corpus": "indriyārthasannikarṣotpannam jñānam avyapadeśyam avyabhicāri vyavasāyātmakam pratyakṣam"
+ },
+ "1.1.5": {
+  "iast": "atha tatpūrvakaṃ trividham anumānaṃ pūrvavat śeṣavat sāmānyatodṛṣṭaṃ ca",
+  "chips": [
+   [
+    "atha",
+    "now"
+   ],
+   [
+    "tatpūrvakam",
+    "preceded by that (perception)"
+   ],
+   [
+    "trividham",
+    "threefold"
+   ],
+   [
+    "anumānam",
+    "inference"
+   ],
+   [
+    "pūrvavat",
+    "like the earlier (cause to effect)"
+   ],
+   [
+    "śeṣavat",
+    "with the remainder (effect to cause)"
+   ],
+   [
+    "sāmānyatodṛṣṭam",
+    "seen from general likeness"
+   ],
+   [
+    "ca",
+    "and"
+   ]
+  ],
+  "tr": "Then inference, which is preceded by perception, is of three kinds: pūrvavat, śeṣavat and sāmānyatodṛṣṭa.",
+  "tag": "",
+  "dev": "अथ तत्पूर्वकं त्रिविधम् अनुमानं पूर्ववत् शेषवत् सामान्यतोदृष्टं च",
+  "corpus": "atha tatpūrvakaṃ trividham anumānaṃ pūrvavat śeṣavat sāmānyatodṛṣṭaṃ ca"
+ },
+ "1.1.6": {
+  "iast": "prasiddhasādharmyāt sādhyasādhanam upamānam",
+  "chips": [
+   [
+    "prasiddha",
+    "well known"
+   ],
+   [
+    "sādharmyāt",
+    "from similarity"
+   ],
+   [
+    "sādhya",
+    "what is to be established"
+   ],
+   [
+    "sādhanam",
+    "establishing"
+   ],
+   [
+    "upamānam",
+    "analogy"
+   ]
+  ],
+  "tr": "Analogy establishes what is to be known through similarity to something well known.",
+  "tag": "",
+  "dev": "प्रसिद्धसाधर्म्यात् साध्यसाधनम् उपमानम्",
+  "corpus": "prasiddhasādharmyāt sādhyasādhanam upamānam"
+ },
+ "1.1.7": {
+  "iast": "āptopadeśaḥ śabdaḥ",
+  "chips": [
+   [
+    "āpta",
+    "a reliable person"
+   ],
+   [
+    "upadeśaḥ",
+    "instruction"
+   ],
+   [
+    "śabdaḥ",
+    "is verbal testimony"
+   ]
+  ],
+  "tr": "The instruction of a reliable person is verbal testimony.",
+  "tag": "",
+  "dev": "आप्तोपदेशः शब्दः",
+  "corpus": "āptopadeśaḥ śabdaḥ"
+ },
+ "1.1.9": {
+  "iast": "ātmaśarīrendriyārthabuddhimanaḥpravṛttidoṣapretyabhāvaphaladuḥkhāpavargāḥ tu prameyam",
+  "chips": [
+   [
+    "ātman",
+    "self"
+   ],
+   [
+    "śarīra",
+    "body"
+   ],
+   [
+    "indriya",
+    "senses"
+   ],
+   [
+    "artha",
+    "objects"
+   ],
+   [
+    "buddhi",
+    "cognition"
+   ],
+   [
+    "manas",
+    "mind"
+   ],
+   [
+    "pravṛtti",
+    "activity"
+   ],
+   [
+    "doṣa",
+    "fault"
+   ],
+   [
+    "pretyabhāva",
+    "rebirth"
+   ],
+   [
+    "phala",
+    "fruit"
+   ],
+   [
+    "duḥkha",
+    "pain"
+   ],
+   [
+    "apavargāḥ",
+    "release"
+   ],
+   [
+    "tu",
+    "but (marks the list)"
+   ],
+   [
+    "prameyam",
+    "the object of knowledge"
+   ]
+  ],
+  "tr": "The objects of valid knowledge are: self, body, senses, objects, cognition, mind, activity, fault, rebirth, fruit, pain and release.",
+  "tag": "",
+  "dev": "आत्मशरीरेन्द्रियार्थबुद्धिमनःप्रवृत्तिदोषप्रेत्यभावफलदुःखापवर्गाः तु प्रमेयम्",
+  "corpus": "ātmaśarīrendriyārthabuddhimanaḥpravṛttidoṣapretyabhāvaphaladuḥkhāpavargāḥ tu prameyam"
+ },
+ "1.1.10": {
+  "iast": "icchādveṣaprayatnasukhaduḥkhajñānāni ātmanaḥ liṅgam iti",
+  "chips": [
+   [
+    "icchā",
+    "desire"
+   ],
+   [
+    "dveṣa",
+    "aversion"
+   ],
+   [
+    "prayatna",
+    "effort"
+   ],
+   [
+    "sukha",
+    "pleasure"
+   ],
+   [
+    "duḥkha",
+    "pain"
+   ],
+   [
+    "jñānāni",
+    "cognitions"
+   ],
+   [
+    "ātmanaḥ",
+    "of the self"
+   ],
+   [
+    "liṅgam",
+    "mark, sign"
+   ],
+   [
+    "iti",
+    "thus"
+   ]
+  ],
+  "tr": "Desire, aversion, effort, pleasure, pain and cognition are the marks of the self.",
+  "tag": "",
+  "dev": "इच्छाद्वेषप्रयत्नसुखदुःखज्ञानानि आत्मनः लिङ्गम् इति",
+  "corpus": "icchādveṣaprayatnasukhaduḥkhajñānāni ātmanaḥ liṅgam iti"
+ },
+ "1.1.16": {
+  "iast": "yugapat jñānānutpattiḥ manasaḥ liṅgam",
+  "chips": [
+   [
+    "yugapat",
+    "at one time"
+   ],
+   [
+    "jñāna-anutpattiḥ",
+    "non-arising of cognitions"
+   ],
+   [
+    "manasaḥ",
+    "of the mind"
+   ],
+   [
+    "liṅgam",
+    "mark, sign"
+   ]
+  ],
+  "tr": "That cognitions do not arise at the same moment is the mark of the mind.",
+  "tag": "",
+  "dev": "युगपत् ज्ञानानुत्पत्तिः मनसः लिङ्गम्",
+  "corpus": "yugapat jñānānutpattiḥ manasaḥ liṅgam"
+ },
+ "1.1.23": {
+  "iast": "samānānekadharmopapatteḥ vipratipatteḥ upalabdhyanupalabdhyavyavasthātaḥ ca viśeṣāpekṣaḥ vimarśaḥ saṃśayaḥ",
+  "chips": [
+   [
+    "samāna-aneka-dharma-upapatteḥ",
+    "from a common property, or from several (uncommon) properties"
+   ],
+   [
+    "vipratipatteḥ",
+    "from conflicting opinions"
+   ],
+   [
+    "upalabdhi-anupalabdhi-avyavasthātaḥ",
+    "from irregularity of perception and of non-perception"
+   ],
+   [
+    "ca",
+    "and"
+   ],
+   [
+    "viśeṣa-apekṣaḥ",
+    "wanting a distinguishing feature"
+   ],
+   [
+    "vimarśaḥ",
+    "wavering"
+   ],
+   [
+    "saṃśayaḥ",
+    "is doubt"
+   ]
+  ],
+  "tr": "Doubt is a wavering that looks for a distinguishing feature, arising from a common property, an uncommon property, conflicting opinions, or irregularity in perceiving or not perceiving.",
+  "tag": "",
+  "dev": "समानानेकधर्मोपपत्तेः विप्रतिपत्तेः उपलब्ध्यनुपलब्ध्यव्यवस्थातः च विशेषापेक्षः विमर्शः संशयः",
+  "corpus": "samānānekadharmopapatteḥ vipratipatteḥ upalabdhyanupalabdhyavyavasthātaḥ ca viśeṣāpekṣaḥ vimarśaḥ saṃśayaḥ"
+ },
+ "1.1.32": {
+  "iast": "pratijñāhetūdāharaṇopanayanigamanāni avayavāḥ",
+  "chips": [
+   [
+    "pratijñā",
+    "thesis"
+   ],
+   [
+    "hetu",
+    "reason"
+   ],
+   [
+    "udāharaṇa",
+    "example"
+   ],
+   [
+    "upanaya",
+    "application"
+   ],
+   [
+    "nigamanāni",
+    "conclusion"
+   ],
+   [
+    "avayavāḥ",
+    "are the members"
+   ]
+  ],
+  "tr": "Thesis, reason, example, application and conclusion are the members of an argument.",
+  "tag": "",
+  "dev": "प्रतिज्ञाहेतूदाहरणोपनयनिगमनानि अवयवाः",
+  "corpus": "pratijñāhetūdāharaṇopanayanigamanāni avayavāḥ"
+ },
+ "1.1.33": {
+  "iast": "sādhyanirdeśaḥ pratijñā",
+  "chips": [
+   [
+    "sādhya",
+    "what is to be established"
+   ],
+   [
+    "nirdeśaḥ",
+    "statement"
+   ],
+   [
+    "pratijñā",
+    "is the thesis"
+   ]
+  ],
+  "tr": "Stating what is to be established is the thesis.",
+  "tag": "",
+  "dev": "साध्यनिर्देशः प्रतिज्ञा",
+  "corpus": "sādhyanirdeśaḥ pratijñā"
+ },
+ "1.1.34": {
+  "iast": "udāharaṇasādharmyāt sādhyasādhanaṃ hetuḥ",
+  "chips": [
+   [
+    "udāharaṇa",
+    "example"
+   ],
+   [
+    "sādharmyāt",
+    "from similarity"
+   ],
+   [
+    "sādhya-sādhanam",
+    "establishing the sādhya"
+   ],
+   [
+    "hetuḥ",
+    "is the reason"
+   ]
+  ],
+  "tr": "The reason establishes what is to be established through similarity to the example.",
+  "tag": "",
+  "dev": "उदाहरणसाधर्म्यात् साध्यसाधनं हेतुः",
+  "corpus": "udāharaṇasādharmyāt sādhyasādhanaṃ hetuḥ"
+ },
+ "1.1.35": {
+  "iast": "tathā vaidharmyāt",
+  "chips": [
+   [
+    "tathā",
+    "likewise"
+   ],
+   [
+    "vaidharmyāt",
+    "from dissimilarity"
+   ]
+  ],
+  "tr": "Likewise through dissimilarity.",
+  "tag": "",
+  "dev": "तथा वैधर्म्यात्",
+  "corpus": "tathā vaidharmyāt"
+ },
+ "1.1.36": {
+  "iast": "sādhyasādharmyāt taddharmabhāvī dṛṣṭāntaḥ udāharaṇam",
+  "chips": [
+   [
+    "sādhya-sādharmyāt",
+    "from similarity to the sādhya"
+   ],
+   [
+    "tad-dharma-bhāvī",
+    "having that property"
+   ],
+   [
+    "dṛṣṭāntaḥ",
+    "an instance"
+   ],
+   [
+    "udāharaṇam",
+    "is the example"
+   ]
+  ],
+  "tr": "An instance that shares the property of the sādhya, through similarity to it, is the example.",
+  "tag": "",
+  "dev": "साध्यसाधर्म्यात् तद्धर्मभावी दृष्टान्तः उदाहरणम्",
+  "corpus": "sādhyasādharmyāt taddharmabhāvī dṛṣṭāntaḥ udāharaṇam"
+ },
+ "1.1.37": {
+  "iast": "tadviparyayāt vā viparītam",
+  "chips": [
+   [
+    "tad-viparyayāt",
+    "from the reverse of that"
+   ],
+   [
+    "vā",
+    "or"
+   ],
+   [
+    "viparītam",
+    "the opposite (example)"
+   ]
+  ],
+  "tr": "Or, from the reverse, the opposite kind of example.",
+  "tag": "",
+  "dev": "तद्विपर्ययात् वा विपरीतम्",
+  "corpus": "tadviparyayāt vā viparītam"
+ },
+ "1.1.38": {
+  "iast": "udāharaṇāpekṣaḥ tathā iti upasaṃhāraḥ na tathā iti vā sādhyasya upanayaḥ",
+  "chips": [
+   [
+    "udāharaṇa-apekṣaḥ",
+    "depending on the example"
+   ],
+   [
+    "tathā iti",
+    "“so it is”"
+   ],
+   [
+    "upasaṃhāraḥ",
+    "drawing together"
+   ],
+   [
+    "na tathā iti",
+    "“it is not so”"
+   ],
+   [
+    "vā",
+    "or"
+   ],
+   [
+    "sādhyasya",
+    "regarding the sādhya"
+   ],
+   [
+    "upanayaḥ",
+    "is the application"
+   ]
+  ],
+  "tr": "Depending on the example, saying “so it is” or “not so” about the subject is the application.",
+  "tag": "",
+  "dev": "उदाहरणापेक्षः तथा इति उपसंहारः न तथा इति वा साध्यस्य उपनयः",
+  "corpus": "udāharaṇāpekṣaḥ tathā iti upasaṃhāraḥ na tathā iti vā sādhyasya upanayaḥ"
+ },
+ "1.1.39": {
+  "iast": "hetvapadeśāt pratijñāyāḥ punarvacanaṃ nigamanam",
+  "chips": [
+   [
+    "hetu-apadeśāt",
+    "from citing the reason"
+   ],
+   [
+    "pratijñāyāḥ",
+    "of the thesis"
+   ],
+   [
+    "punar-vacanam",
+    "restating"
+   ],
+   [
+    "nigamanam",
+    "is the conclusion"
+   ]
+  ],
+  "tr": "Restating the thesis after the reason has been cited is the conclusion.",
+  "tag": "",
+  "dev": "हेत्वपदेशात् प्रतिज्ञायाः पुनर्वचनं निगमनम्",
+  "corpus": "hetvapadeśāt pratijñāyāḥ punarvacanam nigamanam"
+ },
+ "1.1.40": {
+  "iast": "avijñātatattve arthe kāraṇopapattitaḥ tattvajñānārtham ūhaḥ tarkaḥ",
+  "chips": [
+   [
+    "avijñāta-tattve arthe",
+    "about a thing whose truth is not known"
+   ],
+   [
+    "kāraṇa-upapattitaḥ",
+    "on the strength of causal considerations"
+   ],
+   [
+    "tattva-jñāna-artham",
+    "for the sake of knowing the truth"
+   ],
+   [
+    "ūhaḥ",
+    "supposition"
+   ],
+   [
+    "tarkaḥ",
+    "is tarka"
+   ]
+  ],
+  "tr": "Tarka is a supposition, made on causal grounds about a thing whose truth is not yet known, in order to reach knowledge of the truth.",
+  "tag": "",
+  "dev": "अविज्ञाततत्त्वे अर्थे कारणोपपत्तितः तत्त्वज्ञानार्थम् ऊहः तर्कः",
+  "corpus": "avijñātatatve arthe kāraṇopapattitaḥ tattvajñānārtham uhaḥ tarkaḥ"
+ },
+ "1.1.41": {
+  "iast": "vimṛśya pakṣapratipakṣābhyām arthāvadhāraṇaṃ nirṇayaḥ",
+  "chips": [
+   [
+    "vimṛśya",
+    "having considered"
+   ],
+   [
+    "pakṣa-pratipakṣābhyām",
+    "with thesis and counter-thesis"
+   ],
+   [
+    "artha-avadhāraṇam",
+    "settling the matter"
+   ],
+   [
+    "nirṇayaḥ",
+    "is ascertainment"
+   ]
+  ],
+  "tr": "Having weighed it with thesis and counter-thesis, settling the matter is ascertainment.",
+  "tag": "",
+  "dev": "विमृश्य पक्षप्रतिपक्षाभ्याम् अर्थावधारणं निर्णयः",
+  "corpus": "vimṛśya pakṣapratipakṣābhyām arthāvadhāraṇam nirṇayaḥ"
+ },
+ "1.2.1": {
+  "iast": "pramāṇatarkasādhanopālambhaḥ siddhāntāviruddhaḥ pañcāvayavopapannaḥ pakṣapratipakṣaparigrahaḥ vādaḥ",
+  "chips": [
+   [
+    "pramāṇa-tarka-sādhana-upālambhaḥ",
+    "proving and refuting by pramāṇa and tarka"
+   ],
+   [
+    "siddhānta-aviruddhaḥ",
+    "not contradicting the tenet"
+   ],
+   [
+    "pañca-avayava-upapannaḥ",
+    "furnished with the five members"
+   ],
+   [
+    "pakṣa-pratipakṣa-parigrahaḥ",
+    "taking up a thesis and its counter-thesis"
+   ],
+   [
+    "vādaḥ",
+    "is vāda, discussion"
+   ]
+  ],
+  "tr": "Vāda: proving and refuting by pramāṇa and tarka, within the accepted tenet, with the five members, taking a thesis and counter-thesis.",
+  "tag": "",
+  "dev": "प्रमाणतर्कसाधनोपालम्भः सिद्धान्ताविरुद्धः पञ्चावयवोपपन्नः पक्षप्रतिपक्षपरिग्रहः वादः",
+  "corpus": "pramāṇatarkasādhanopālambhaḥ siddhāntāviruddhaḥ pañcāvayavopapannaḥ pakṣapratipakṣaparigrahaḥ vādaḥ"
+ },
+ "1.2.2": {
+  "iast": "yathoktopapannaḥ chalajātinigrahasthānasādhanopālambhaḥ jalpaḥ",
+  "chips": [
+   [
+    "yathā-ukta-upapannaḥ",
+    "having the features just stated"
+   ],
+   [
+    "chala-jāti-nigrahasthāna",
+    "quibble, futile rejoinder, ground of defeat"
+   ],
+   [
+    "sādhana-upālambhaḥ",
+    "used for proving and refuting"
+   ],
+   [
+    "jalpaḥ",
+    "is jalpa"
+   ]
+  ],
+  "tr": "Jalpa has those same features but proves and refutes also by chala, jāti and nigrahasthāna.",
+  "tag": "",
+  "dev": "यथोक्तोपपन्नः छलजातिनिग्रहस्थानसाधनोपालम्भः जल्पः",
+  "corpus": "yathoktopapannaḥ chalajātinigrahasthānasādhanopālambhaḥ jalpaḥ"
+ },
+ "1.2.3": {
+  "iast": "saḥ pratipakṣasthāpanāhīnaḥ vitaṇḍā",
+  "chips": [
+   [
+    "saḥ",
+    "that (jalpa)"
+   ],
+   [
+    "pratipakṣa-sthāpanā-hīnaḥ",
+    "lacking the establishing of a counter-thesis"
+   ],
+   [
+    "vitaṇḍā",
+    "is vitaṇḍā"
+   ]
+  ],
+  "tr": "That same, without establishing a counter-thesis of one’s own, is vitaṇḍā.",
+  "tag": "",
+  "dev": "सः प्रतिपक्षस्थापनाहीनः वितण्डा",
+  "corpus": "saḥ pratipakṣasthāpanāhīnaḥ vitaṇḍā"
+ },
+ "1.2.4": {
+  "iast": "savyabhicāraviruddhaprakaraṇasamasādhyasamakālātītāḥ hetvābhāsāḥ",
+  "chips": [
+   [
+    "savyabhicāra",
+    "deviating"
+   ],
+   [
+    "viruddha",
+    "contradictory"
+   ],
+   [
+    "prakaraṇasama",
+    "balancing the question"
+   ],
+   [
+    "sādhyasama",
+    "as unproven as the sādhya"
+   ],
+   [
+    "kālātītāḥ",
+    "out of time"
+   ],
+   [
+    "hetvābhāsāḥ",
+    "are fallacious reasons"
+   ]
+  ],
+  "tr": "The deviating, contradictory, question-balancing, sādhya-equal and out-of-time reasons are the hetvābhāsas.",
+  "tag": "",
+  "dev": "सव्यभिचारविरुद्धप्रकरणसमसाध्यसमकालातीताः हेत्वाभासाः",
+  "corpus": "savyabhicāra-viruddha-prakaraṇasama-sādhyasama-kālātītāḥ hetvābhāsāḥ"
+ },
+ "1.2.5": {
+  "iast": "anaikāntikaḥ savyabhicāraḥ",
+  "chips": [
+   [
+    "anaikāntikaḥ",
+    "not one-sided, inconclusive"
+   ],
+   [
+    "savyabhicāraḥ",
+    "is the deviating reason"
+   ]
+  ],
+  "tr": "The inconclusive reason is the deviating one (savyabhicāra).",
+  "tag": "",
+  "dev": "अनैकान्तिकः सव्यभिचारः",
+  "corpus": "anaikāntikaḥ savyabhicāraḥ"
+ },
+ "1.2.6": {
+  "iast": "siddhāntam abhyupetya tadvirodhī viruddhaḥ",
+  "chips": [
+   [
+    "siddhāntam",
+    "a tenet"
+   ],
+   [
+    "abhyupetya",
+    "having accepted"
+   ],
+   [
+    "tad-virodhī",
+    "contradicting it"
+   ],
+   [
+    "viruddhaḥ",
+    "is the contradictory reason"
+   ]
+  ],
+  "tr": "A reason that contradicts the very tenet one has accepted is viruddha.",
+  "tag": "",
+  "dev": "सिद्धान्तम् अभ्युपेत्य तद्विरोधी विरुद्धः",
+  "corpus": "siddhāntam abhyupetya tadvirodhī viruddhaḥ"
+ },
+ "1.2.7": {
+  "iast": "yasmāt prakaraṇacintā saḥ nirṇayārtham apadiṣṭaḥ prakaraṇasamaḥ",
+  "chips": [
+   [
+    "yasmāt",
+    "from which"
+   ],
+   [
+    "prakaraṇa-cintā",
+    "the question itself stays under consideration"
+   ],
+   [
+    "saḥ",
+    "that"
+   ],
+   [
+    "nirṇaya-artham",
+    "for the sake of settling"
+   ],
+   [
+    "apadiṣṭaḥ",
+    "cited"
+   ],
+   [
+    "prakaraṇasamaḥ",
+    "is prakaraṇasama"
+   ]
+  ],
+  "tr": "A reason cited to settle a question, from which the question itself remains live, is prakaraṇasama.",
+  "tag": "",
+  "dev": "यस्मात् प्रकरणचिन्ता सः निर्णयार्थम् अपदिष्टः प्रकरणसमः",
+  "corpus": "yasmāt prakaraṇacintā saḥ nirṇayārthamapadiṣṭaḥ prakaraṇasamaḥ"
+ },
+ "1.2.8": {
+  "iast": "sādhyāviśiṣṭaḥ sādhyatvāt sādhyasamaḥ",
+  "chips": [
+   [
+    "sādhya-aviśiṣṭaḥ",
+    "no different from the sādhya"
+   ],
+   [
+    "sādhyatvāt",
+    "because it too needs establishing"
+   ],
+   [
+    "sādhyasamaḥ",
+    "is sādhyasama"
+   ]
+  ],
+  "tr": "A reason no different from the sādhya, since it too needs to be established, is sādhyasama.",
+  "tag": "",
+  "dev": "साध्याविशिष्टः साध्यत्वात् साध्यसमः",
+  "corpus": "sādhyāviśiṣṭaḥ sādhyatvāt sādhyasamaḥ"
+ },
+ "1.2.9": {
+  "iast": "kālātyayāpadiṣṭaḥ kālātītaḥ",
+  "chips": [
+   [
+    "kāla-atyaya-apadiṣṭaḥ",
+    "cited after the time has passed"
+   ],
+   [
+    "kālātītaḥ",
+    "is kālātīta"
+   ]
+  ],
+  "tr": "A reason cited after its time has lapsed is kālātīta.",
+  "tag": "",
+  "dev": "कालात्ययापदिष्टः कालातीतः",
+  "corpus": "kālātyayāpadiṣṭaḥ kālātītaḥ"
+ },
+ "1.2.10": {
+  "iast": "vacanavighātaḥ arthavikalpopapattyā chalam",
+  "chips": [
+   [
+    "vacana-vighātaḥ",
+    "obstructing a statement"
+   ],
+   [
+    "artha-vikalpa-upapattyā",
+    "by supposing a different meaning"
+   ],
+   [
+    "chalam",
+    "is chala, quibble"
+   ]
+  ],
+  "tr": "Obstructing a statement by supposing a different meaning for it is chala.",
+  "tag": "",
+  "dev": "वचनविघातः अर्थविकल्पोपपत्त्या छलम्",
+  "corpus": "vacanavighātaḥ arthavikalpopapattyā chalam"
+ },
+ "1.2.11": {
+  "iast": "tat trividham vākchalaṃ sāmānyacchalam upacāracchalaṃ ca iti",
+  "chips": [
+   [
+    "tat",
+    "that"
+   ],
+   [
+    "trividham",
+    "threefold"
+   ],
+   [
+    "vāk-chalam",
+    "quibble on wording"
+   ],
+   [
+    "sāmānya-chalam",
+    "quibble by over-generalising"
+   ],
+   [
+    "upacāra-chalam",
+    "quibble on figurative use"
+   ],
+   [
+    "ca iti",
+    "and so"
+   ]
+  ],
+  "tr": "It is threefold: quibble on wording, on generality, and on figurative use.",
+  "tag": "",
+  "dev": "तत् त्रिविधम् वाक्छलं सामान्यच्छलम् उपचारच्छलं च इति",
+  "corpus": "tat trividham - vākchalam sāmānyacchalam upacāracchalam ca iti"
+ },
+ "1.2.12": {
+  "iast": "aviśeṣābhihite arthe vaktuḥ abhiprāyāt arthāntarakalpanā vākchalam",
+  "chips": [
+   [
+    "aviśeṣa-abhihite arthe",
+    "when a word with several senses is used"
+   ],
+   [
+    "vaktuḥ abhiprāyāt",
+    "apart from the speaker’s intention"
+   ],
+   [
+    "artha-antara-kalpanā",
+    "imagining another meaning"
+   ],
+   [
+    "vāk-chalam",
+    "is vākchala"
+   ]
+  ],
+  "tr": "When a word with more than one sense is used, imagining a meaning other than the speaker intended is vākchala.",
+  "tag": "",
+  "dev": "अविशेषाभिहिते अर्थे वक्तुः अभिप्रायात् अर्थान्तरकल्पना वाक्छलम्",
+  "corpus": "aviśeṣābhihite arthe vaktuḥ abhiprāyāt arthāntarakalpanā vākchalam"
+ },
+ "1.2.13": {
+  "iast": "sambhavataḥ arthasya atisāmānyayogāt asambhūtārthakalpanā sāmānyacchalam",
+  "chips": [
+   [
+    "sambhavataḥ arthasya",
+    "of a thing that is possible"
+   ],
+   [
+    "ati-sāmānya-yogāt",
+    "by stretching the generality too far"
+   ],
+   [
+    "asambhūta-artha-kalpanā",
+    "imagining an impossible meaning"
+   ],
+   [
+    "sāmānya-chalam",
+    "is sāmānyacchala"
+   ]
+  ],
+  "tr": "Taking a possible statement and stretching its generality to read an impossible meaning into it is sāmānyacchala.",
+  "tag": "",
+  "dev": "सम्भवतः अर्थस्य अतिसामान्ययोगात् असम्भूतार्थकल्पना सामान्यच्छलम्",
+  "corpus": "sambhavataḥ arthasya atisāmānyayogāt asambhūtārthakalpanā sāmānyacchalam"
+ },
+ "1.2.14": {
+  "iast": "dharmavikalpanirdeśe arthasadbhāvapratiṣedhaḥ upacāracchalam",
+  "chips": [
+   [
+    "dharma-vikalpa-nirdeśe",
+    "when a word is used in a transferred sense"
+   ],
+   [
+    "artha-sadbhāva-pratiṣedhaḥ",
+    "denying it by taking it literally"
+   ],
+   [
+    "upacāra-chalam",
+    "is upacāracchala"
+   ]
+  ],
+  "tr": "When a word is used figuratively, denying the statement by insisting on the literal sense is upacāracchala.",
+  "tag": "",
+  "dev": "धर्मविकल्पनिर्देशे अर्थसद्भावप्रतिषेधः उपचारच्छलम्",
+  "corpus": "dharmavikalpanirdeśe arthasadbhāvapratiṣedhaḥ upacāracchalam"
+ },
+ "1.2.18": {
+  "iast": "sādharmyavaidharmyābhyāṃ pratyavasthānaṃ jātiḥ",
+  "chips": [
+   [
+    "sādharmya-vaidharmyābhyām",
+    "by similarity or dissimilarity"
+   ],
+   [
+    "pratyavasthānam",
+    "a counter-position"
+   ],
+   [
+    "jātiḥ",
+    "is jāti"
+   ]
+  ],
+  "tr": "A counter-position taken merely on similarity or dissimilarity is jāti, a futile rejoinder.",
+  "tag": "",
+  "dev": "साधर्म्यवैधर्म्याभ्यां प्रत्यवस्थानं जातिः",
+  "corpus": "sādharmyavaidharmyābhyām pratyavasthānaṃ jātiḥ"
+ },
+ "1.2.19": {
+  "iast": "vipratipattiḥ apratipattiḥ ca nigrahasthānam",
+  "chips": [
+   [
+    "vipratipattiḥ",
+    "wrong understanding"
+   ],
+   [
+    "apratipattiḥ",
+    "non-understanding"
+   ],
+   [
+    "ca",
+    "and"
+   ],
+   [
+    "nigrahasthānam",
+    "is a ground of defeat"
+   ]
+  ],
+  "tr": "Misunderstanding and non-understanding are grounds of defeat.",
+  "tag": "",
+  "dev": "विप्रतिपत्तिः अप्रतिपत्तिः च निग्रहस्थानम्",
+  "corpus": "vipratipattiḥ apratipattiḥ ca nigrahasthānam"
+ },
+ "2.1.8": {
+  "iast": "pratyakṣādīnām aprāmāṇyaṃ traikālyāsiddheḥ",
+  "chips": [
+   [
+    "pratyakṣa-ādīnām",
+    "of perception and the rest"
+   ],
+   [
+    "aprāmāṇyam",
+    "are not valid means (the objector says)"
+   ],
+   [
+    "traikālya-asiddheḥ",
+    "because the three times cannot be made to work"
+   ]
+  ],
+  "tr": "Objector: perception and the rest are not valid means, because they fail in all three times: before, after or together with their objects.",
+  "tag": "pūrvapakṣa",
+  "dev": "प्रत्यक्षादीनाम् अप्रामाण्यं त्रैकाल्यासिद्धेः",
+  "corpus": "pratyakṣādīnām aprāmāṇyaṃ traikālyāsiddheḥ"
+ },
+ "2.1.13": {
+  "iast": "sarvapramāṇapratiṣedhāt ca pratiṣedhānupapattiḥ",
+  "chips": [
+   [
+    "sarva-pramāṇa-pratiṣedhāt",
+    "since it rejects every pramāṇa"
+   ],
+   [
+    "ca",
+    "and"
+   ],
+   [
+    "pratiṣedha-anupapattiḥ",
+    "the rejection itself cannot be established"
+   ]
+  ],
+  "tr": "Reply: by rejecting every pramāṇa, the objector’s own rejection is left with nothing to establish it.",
+  "tag": "siddhānta",
+  "dev": "सर्वप्रमाणप्रतिषेधात् च प्रतिषेधानुपपत्तिः",
+  "corpus": "sarvapramāṇapratiṣedhāt ca pratiṣedhānupapattiḥ"
+ },
+ "2.1.19": {
+  "iast": "na pradīpaprakāśasiddhivat tatsiddheḥ",
+  "chips": [
+   [
+    "na",
+    "no"
+   ],
+   [
+    "pradīpa-prakāśa-siddhi-vat",
+    "like the establishing of a lamp’s light"
+   ],
+   [
+    "tat-siddheḥ",
+    "since that is established (in the same way)"
+   ]
+  ],
+  "tr": "No: it is established just as a lamp’s light is, which both shows other things and is itself known.",
+  "tag": "siddhānta",
+  "dev": "न प्रदीपप्रकाशसिद्धिवत् तत्सिद्धेः",
+  "corpus": "na, pradīpaprakāśasiddhivat tatsiddheḥ"
+ },
+ "3.1.1": {
+  "iast": "darśanasparśanābhyām ekārthagrahaṇāt",
+  "chips": [
+   [
+    "darśana-sparśanābhyām",
+    "by seeing and by touching"
+   ],
+   [
+    "eka-artha-grahaṇāt",
+    "since one and the same object is grasped"
+   ]
+  ],
+  "tr": "Since one and the same object is grasped by seeing and by touching (there is a single knower, the self, apart from the separate senses).",
+  "tag": "the argument",
+  "dev": "दर्शनस्पर्शनाभ्याम् एकार्थग्रहणात्",
+  "corpus": "darśanasparśanābhyām ekārthagrahaṇāt"
+ },
+ "3.1.2": {
+  "iast": "na viṣayavyavasthānāt",
+  "chips": [
+   [
+    "na",
+    "not so (the objector says)"
+   ],
+   [
+    "viṣaya-vyavasthānāt",
+    "because each sense has its own fixed domain"
+   ]
+  ],
+  "tr": "Objector: not so, because each sense has its own fixed domain.",
+  "tag": "objection",
+  "dev": "न विषयव्यवस्थानात्",
+  "corpus": "na, viṣayavyavasthānāt"
+ },
+ "3.1.3": {
+  "iast": "tadvyavasthānāt eva ātmasadbhāvāt apratiṣedhaḥ",
+  "chips": [
+   [
+    "tad-vyavasthānāt eva",
+    "from that very fixing of domains"
+   ],
+   [
+    "ātma-sadbhāvāt",
+    "because the self exists"
+   ],
+   [
+    "apratiṣedhaḥ",
+    "there is no refutation"
+   ]
+  ],
+  "tr": "Reply: that very fixing of domains shows there is a self that brings them together, so the argument stands.",
+  "tag": "reply",
+  "dev": "तद्व्यवस्थानात् एव आत्मसद्भावात् अप्रतिषेधः",
+  "corpus": "tadvyavasthānāt eva ātmasadbhāvāt apratiṣedhaḥ"
+ },
+ "4.2.50": {
+  "iast": "tattvādhyavasāyasaṃrakṣaṇārthaṃ jalpavitaṇḍe bījaprarohasaṃrakṣaṇārthaṃ kaṇṭakaśākhāvaraṇavat",
+  "chips": [
+   [
+    "tattva-adhyavasāya-saṃrakṣaṇa-artham",
+    "for guarding the ascertainment of truth"
+   ],
+   [
+    "jalpa-vitaṇḍe",
+    "jalpa and vitaṇḍā"
+   ],
+   [
+    "bīja-praroha-saṃrakṣaṇa-artham",
+    "for protecting the sprouting of seeds"
+   ],
+   [
+    "kaṇṭaka-śākhā-āvaraṇa-vat",
+    "like a fence of thorny branches"
+   ]
+  ],
+  "tr": "Jalpa and vitaṇḍā are for guarding the ascertainment of truth, as a fence of thorny branches protects sprouting seeds.",
+  "tag": "",
+  "dev": "तत्त्वाध्यवसायसंरक्षणार्थं जल्पवितण्डे बीजप्ररोहसंरक्षणार्थं कण्टकशाखावरणवत्",
+  "corpus": "tattvādhyavasāyasaṃrakṣaṇārthaṃ jalpavitaṇḍe, bījaprarohasaṃrakṣṇārthaṃ kaṇṭakaśākhāvaraṇavat"
+ }
+}
